@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "341917465944",
+    "project_id": "food4all-5e3ce",
+    "storage_bucket": "food4all-5e3ce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341917465944:android:196780bc8645c9f7fef92d",
+        "android_client_info": {
+          "package_name": "com.rajdeep.food4all"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoWptiC6wuHxAnqKQkNXzNjFkL6C-OsWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

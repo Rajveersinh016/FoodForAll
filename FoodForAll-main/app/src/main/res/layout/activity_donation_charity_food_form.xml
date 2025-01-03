@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#121212"
+    android:padding="16dp">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#121212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="7dp"
+            android:text="Donation Details"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="28dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-33dp"
+            android:src="@drawable/back" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/tvNgoHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="FOOD FOR ALL : Waghodia"
+        android:textColor="#FFC107"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNgoSubHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNgoHeader"
+        android:layout_marginTop="8dp"
+        android:text="Together We Can Make A Difference"
+        android:textColor="#808080"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+    <!-- Input Fields -->
+    <LinearLayout
+        android:id="@+id/llInputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNgoSubHeader"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:background="@drawable/text_back"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/text_back"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Mobile Number -->
+        <EditText
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:background="@drawable/text_back"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Organization Name -->
+        <EditText
+            android:id="@+id/etOrganizationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Organization Name"
+            android:background="@drawable/text_back"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Item Quantity -->
+        <EditText
+            android:id="@+id/etItemQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item Quantity (e.g., 5 Kg, 3 Bags)"
+            android:background="@drawable/text_back"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#808080"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <Spinner
+            android:id="@+id/foodTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_text_back"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmitDonation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llInputs"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/accentOrange"
+        android:padding="12dp"
+        android:text="Submit Donation"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+</RelativeLayout>

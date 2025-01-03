@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="donation_categories">
+        <item>Clothing</item>
+        <item>Books</item>
+        <item>Electronics</item>
+        <item>Furniture</item>
+        <item>Medical Supplies</item>
+        <item>Other</item>
+    </string-array>
+</resources>
